@@ -10,7 +10,9 @@ class Triangle
 
   def kind
     # create an if statement that takes into account the Triangle inequality theorem
-    if ((@a + @b) < @c) || ( (@a + @c) < @b) || ( (@b + @c) < @a)
+    triangle_inequality = ((@a + @b) < @c) || ( (@a + @c) < @b) || ( (@b + @c) < @a)
+
+    if
       begin
         raise TriangleError
       rescue TriangleError => error
