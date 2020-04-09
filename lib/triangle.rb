@@ -15,8 +15,8 @@ class Triangle
         raise TriangleError
       rescue TriangleError => error
         puts error.message
+      end
     end
-
       if @a == @b && @b == @c
         :equilateral
       elsif (@a == @b && @a != @c && @b != @c) || (@b == @c && @b != @a && @c != @a) || (@a == @c && @a != @b && @c != @b)
