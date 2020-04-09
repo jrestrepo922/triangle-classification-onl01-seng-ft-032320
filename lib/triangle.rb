@@ -1,5 +1,5 @@
 
-
+require "pry"
 class Triangle
 
   def initialize( a, b, c)
@@ -13,6 +13,7 @@ class Triangle
     triangle_inequality = ((@a + @b) <= @c) || ( (@a + @c) <= @b) || ( (@b + @c) <= @a)
     zero_length =  @a == 0 || @b == 0 || @c == 0
     negative_length = @a < 0 || @b < 0 || @c < 0
+    binding.binding.pry
     if triangle_inequality || zero_length || negative_length
       begin
         raise TriangleError
