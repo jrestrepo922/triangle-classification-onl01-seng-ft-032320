@@ -11,7 +11,7 @@ class Triangle
   def kind
     # create an if statement that takes into account the Triangle inequality theorem
     triangle_inequality = ((@a + @b) < @c) || ( (@a + @c) < @b) || ( (@b + @c) < @a)
-
+    zero_length = @a == 0 || @b == 0 || @c ==0
     if
       begin
         raise TriangleError
